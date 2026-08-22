@@ -5,6 +5,12 @@
 }
 
 
+html{
+
+    scroll-behavior: smooth;
+
+}
+
 body{
 
     margin: 0;
@@ -13,7 +19,6 @@ body{
     color: #333;
 
 }
-
 
 /* Header */
 
@@ -28,7 +33,6 @@ header{
 
 }
 
-
 .logo{
 
     font-size: 25px;
@@ -36,13 +40,11 @@ header{
 
 }
 
-
 .headerText{
 
     color: #d1d5db;
 
 }
-
 
 /* Main */
 
@@ -55,18 +57,40 @@ main{
 
 }
 
+/* Back Button */
+
+.backArea{
+
+    margin-top: 20px;
+
+}
+
+.backButton{
+
+    background-color: #1f2937;
+    border-radius: 7px;
+    padding: 10px 18px;
+
+}
+
+.backButton:hover{
+
+    background-color: #374151;
+
+}
+
+/* Search Section */
 
 .searchSection{
 
     text-align: center;
     background-color: white;
-    margin-top: 35px;
+    margin-top: 20px;
     padding: 40px 20px;
     border-radius: 12px;
     box-shadow: 0px 5px 20px rgba(0,0,0,0.08);
 
 }
-
 
 .searchSection h1{
 
@@ -75,13 +99,11 @@ main{
 
 }
 
-
 .searchSection p{
 
     color: #777;
 
 }
-
 
 .searchBox{
 
@@ -90,7 +112,6 @@ main{
     justify-content: center;
 
 }
-
 
 input{
 
@@ -103,13 +124,11 @@ input{
 
 }
 
-
 input:focus{
 
     border: 1px solid #2563eb;
 
 }
-
 
 button{
 
@@ -123,13 +142,11 @@ button{
 
 }
 
-
 button:hover{
 
     background-color: #1d4ed8;
 
 }
-
 
 /* Result Information */
 
@@ -140,21 +157,19 @@ button:hover{
 
 }
 
-
 .resultText{
 
     font-size: 17px;
 
 }
 
-
 .loading{
 
     padding: 15px;
     color: #2563eb;
+    font-weight: bold;
 
 }
-
 
 .message{
 
@@ -164,7 +179,6 @@ button:hover{
     box-shadow: 0px 3px 10px rgba(0,0,0,0.08);
 
 }
-
 
 /* Meal Cards */
 
@@ -176,7 +190,6 @@ button:hover{
 
 }
 
-
 .innerStyle{
 
     background-color: white;
@@ -187,14 +200,12 @@ button:hover{
 
 }
 
-
 .innerStyle:hover{
 
     transform: translateY(-5px);
     box-shadow: 0px 8px 25px rgba(0,0,0,0.12);
 
 }
-
 
 .innerStyle img{
 
@@ -204,13 +215,11 @@ button:hover{
 
 }
 
-
 .mealContent{
 
     padding: 20px;
 
 }
-
 
 .mealId{
 
@@ -220,20 +229,17 @@ button:hover{
 
 }
 
-
 .mealContent h2{
 
     margin: 10px 0px;
 
 }
 
-
 .mealContent h4{
 
     margin-bottom: 8px;
 
 }
-
 
 .mealContent p{
 
@@ -244,7 +250,6 @@ button:hover{
 
 }
 
-
 /* Show All Button */
 
 #showAllArea{
@@ -254,14 +259,12 @@ button:hover{
 
 }
 
-
 .showAllButton{
 
     border-radius: 7px;
     padding: 15px 35px;
 
 }
-
 
 /* Footer */
 
@@ -275,13 +278,11 @@ footer{
 
 }
 
-
 footer h3{
 
     margin: 0px 0px 10px 0px;
 
 }
-
 
 footer p{
 
@@ -289,7 +290,6 @@ footer p{
     color: #d1d5db;
 
 }
-
 
 /* Responsive Design */
 
@@ -303,7 +303,6 @@ footer p{
 
 }
 
-
 @media(max-width: 600px){
 
     header{
@@ -313,13 +312,11 @@ footer p{
 
     }
 
-
     .headerText{
 
         margin-top: 10px;
 
     }
-
 
     .searchBox{
 
@@ -327,14 +324,12 @@ footer p{
 
     }
 
-
     input{
 
         width: 100%;
         border-radius: 7px;
 
     }
-
 
     .searchBox button{
 
@@ -344,10 +339,15 @@ footer p{
 
     }
 
-
     #displayArea{
 
         grid-template-columns: 1fr;
+
+    }
+
+    .backButton{
+
+        width: 100%;
 
     }
 
